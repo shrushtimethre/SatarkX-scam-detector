@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SATARKX is an AI-powered cyber threat intelligence platform for scam and phishing detection.">
+    <title>SATARKX | Cyber Threat Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">S</div>
+                <div>
+                    <h2>SATARKX</h2>
+                    <span>See Beyond the Scam</span>
+                </div>
+            </div>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a href="#dashboard" class="nav-item active"><span>⌂</span>Dashboard</a>
+                <a href="#analyzer" class="nav-item"><span>⚡</span>Threat Analyzer</a>
+                <a href="#modules" class="nav-item"><span>◈</span>Security Modules</a>
+                <a href="#history" class="nav-item"><span>◉</span>Scan History</a>
+                <a href="#about" class="nav-item"><span>ⓘ</span>About SATARKX</a>
+            </nav>
+            <div class="sidebar-bottom">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <div>
+                        <strong>System Active</strong>
+                        <small>AI engine online</small>
+                    </div>
+                </div>
+                <div class="sidebar-note">
+                    <span>🛡</span>
+                    <p>Stay alert. Verify before you trust.</p>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content" id="dashboard">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">AI POWERED CYBER THREAT INTELLIGENCE</p>
+                    <h1>Stay one step ahead of <span>digital scams.</span></h1>
+                    <p class="top-description">
+                        Analyze suspicious messages and links using AI-powered scam detection,
+                        behavior analysis, and real-time threat intelligence.
+                    </p>
+                </div>
+                <div class="top-status">
+                    <span class="live-dot"></span>
+                    Live Protection
+                </div>
+            </header>
+            <section class="stats-grid" aria-label="Threat statistics">
+                <article class="stat-card">
+                    <div class="stat-icon blue">⌁</div>
+                    <div>
+                        <span>Total Analyses</span>
+                        <strong id="totalAnalyses">{{ stats.total }}</strong>
+                        <small>Prototype activity</small>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon red">!</div>
+                    <div>
+                        <span>High Risk</span>
+                        <strong id="highRiskCount">{{ stats.high }}</strong>
+                        <small>Threats detected</small>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon yellow">◈</div>
+                    <div>
+                        <span>Suspicious</span>
+                        <strong id="suspiciousCount">{{ stats.suspicious }}</strong>
+                        <small>Needs attention</small>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <span>Low Risk</span>
+                        <strong id="lowRiskCount">{{ stats.safe }}</strong>
+                        <small>Passed analysis</small>
+                    </div>
+                </article>
+            </section>
+            <section class="analytics-panel" aria-label="Analytics dashboard">
+                <div class="section-title compact">
+                    <p class="section-label">THREAT DASHBOARD</p>
+                    <h2>Security overview</h2>
+                </div>
+                <div class="analytics-grid">
+                    <div class="chart-card">
+                        <h3>Risk distribution</h3>
+                        <div class="bars">
+                            <div class="bar-group">
+                                <span>High</span>
+                                <div class="bar-track"><div id="barHigh" class="bar-fill high"></div></div>
+                            </div>
+                            <div class="bar-group">
+                                <span>Suspicious</span>
+                                <div class="bar-track"><div id="barSuspicious" class="bar-fill suspicious"></div></div>
+                            </div>
+                            <div class="bar-group">
+                                <span>Low</span>
+                                <div class="bar-track"><div id="barLow" class="bar-fill low"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Placement-ready features</h3>
+                        <ul>
+                            <li>AI scam pattern detection</li>
+                            <li>URL security checks</li>
+                            <li>Scan history tracking</li>
+                            <li>JSON report export</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="workspace" id="analyzer">
+                <div class="analyzer-panel">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-label">THREAT ANALYZER</p>
+                            <h2>Analyze a suspicious message</h2>
+                            <p>Paste a message, SMS, email text, or URL below. SATARKX will analyze it for scam indicators.</p>
+                        </div>
+                        <div class="analyzer-badge">AI + URL Security</div>
+                    </div>
+                    <textarea id="message" placeholder="Example: Your bank account will be blocked. Verify your account immediately..."></textarea>
+                    <div class="quick-tests">
+                        <button class="quick-btn" type="button" onclick="setExample('safe')">🟢 Safe Test</button>
+                        <button class="quick-btn" type="button" onclick="setExample('suspicious')">🟡 Suspicious Test</button>
+                        <button class="quick-btn" type="button" onclick="setExample('high')">🔴 High Risk Test</button>
+                    </div>
+                    <button id="analyzeBtn" class="analyze-btn" type="button" onclick="analyzeThreat()">
+                        <span>Analyze Threat</span>
+                        <span>→</span>
+                    </button>
+                </div>
+                <div class="result-panel">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-label">ANALYSIS RESULT</p>
+                            <h2>Threat Assessment</h2>
+                        </div>
+                    </div>
+                    <div id="result" class="hidden">
+                        <div class="risk-box">
+                            <p>RISK LEVEL</p>
+                            <h2 id="riskLevel">--</h2>
+                            <div class="score-row">
+                                <span>Risk Score</span>
+                                <strong><span id="score">0</span>/100</strong>
+                            </div>
+                            <div class="progress">
+                                <div id="progressBar"></div>
+                            </div>
+                        </div>
+                        <div class="reasons">
+                            <h3>Why was it flagged?</h3>
+                            <ul id="reasons"></ul>
+                        </div>
+                        <button id="exportBtn" class="export-btn" type="button">Export JSON</button>
+                    </div>
+                    <div id="emptyResult" class="empty-result">
+                        <div class="empty-icon">🛡️</div>
+                        <h3>Ready for analysis</h3>
+                        <p>Submit a suspicious message or URL to see the security assessment here.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="modules">
+                <div class="section-title">
+                    <p class="section-label">SECURITY MODULES</p>
+                    <h2>What SATARKX checks</h2>
+                    <p>Multiple signals are combined to identify suspicious digital communication.</p>
+                </div>
+                <div class="modules-grid">
+                    <article class="module-card">
+                        <div class="module-icon">🧠</div>
+                        <h3>AI Message Analysis</h3>
+                        <p>Uses TF-IDF and machine learning to identify language patterns associated with scam messages.</p>
+                    </article>
+                    <article class="module-card">
+                        <div class="module-icon">🔗</div>
+                        <h3>URL Security Analysis</h3>
+                        <p>Checks URLs for suspicious domains, IP addresses, HTTPS usage, long links, and phishing indicators.</p>
+                    </article>
+                    <article class="module-card">
+                        <div class="module-icon">🚨</div>
+                        <h3>Scam Pattern Detection</h3>
+                        <p>Detects urgency, sensitive-request language, financial cues, and potential impersonation.</p>
+                    </article>
+                </div>
+            </section>
+            <section id="history">
+                <div class="section-title">
+                    <p class="section-label">SCAN HISTORY</p>
+                    <h2>Recent threat reports</h2>
+                    <p>Track recent scans and export detailed reports for review.</p>
+                </div>
+                <div class="table-panel">
+                    <div class="history-toolbar">
+                        <button id="refreshHistoryBtn" class="secondary-btn" type="button">Refresh</button>
+                    </div>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Risk</th>
+                                    <th>Score</th>
+                                    <th>Preview</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="historyTableBody">
+                                {% for item in history %}
+                                <tr>
+                                    <td>{{ item.timestamp }}</td>
+                                    <td><span class="risk-pill {{ item.risk_color }}">{{ item.risk_level }}</span></td>
+                                    <td>{{ item.score }}</td>
+                                    <td>{{ item.text[:50] }}{% if item.text|length > 50 %}...{% endif %}</td>
+                                    <td><a href="/download/{{ item.id }}" class="download-link" target="_blank">Export</a></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <div class="section-title">
+                    <p class="section-label">DETECTION PIPELINE</p>
+                    <h2>How SATARKX works</h2>
+                    <p>From suspicious input to an explainable risk assessment.</p>
+                </div>
+                <div class="pipeline">
+                    <div class="pipeline-step">
+                        <div class="pipeline-number">01</div>
+                        <h3>Input</h3>
+                        <p>User submits a message or suspicious URL.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-number">02</div>
+                        <h3>AI Analysis</h3>
+                        <p>Text patterns are converted into features and evaluated by the ML model.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-number">03</div>
+                        <h3>Security Checks</h3>
+                        <p>URL and scam-related indicators are checked alongside the message analysis.</p>
+                    </div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-number">04</div>
+                        <h3>Risk Assessment</h3>
+                        <p>SATARKX produces a risk score, level, and explainable reasons.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="safety-box">
+                <h2>🛡️ Stay Cyber Safe</h2>
+                <p>Never share OTPs, passwords, PINs, or banking details through suspicious messages. Always verify links and organizations through trusted sources before taking action.</p>
+            </section>
+            <section id="about">
+                <div class="section-title">
+                    <p class="section-label">ABOUT SATARKX</p>
+                    <h2>See Beyond the Scam</h2>
+                    <p>SATARKX is an AI-powered prototype designed to help users understand potential scam and phishing risks through explainable analysis.</p>
+                </div>
+            </section>
+            <footer class="footer">
+                SATARKX — AI-Powered Scam & Phishing Risk Detection System
+            </footer>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

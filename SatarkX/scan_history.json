@@ -1,0 +1,283 @@
+[
+  {
+    "id": "4e66cc85-c51c-4d4b-87c3-7d50379cd198",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-26 16:54:42"
+  },
+  {
+    "id": "bc94d8b1-2c01-4949-acad-3598832894f7",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-26 16:54:40"
+  },
+  {
+    "id": "9a63b5e7-b0bf-4492-85e3-05bc5943eacc",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-26 08:03:48"
+  },
+  {
+    "id": "69c96ac2-492f-47dc-bed7-a9986d4c0207",
+    "text": "hello avinash , your bank account is blocked due to ekyc plz click the below link www.ekycsbi.com to make your account unblocked",
+    "score": 32,
+    "risk_level": "LOW RISK",
+    "risk_color": "safe",
+    "reasons": [
+      "\u26a0 Possible organization impersonation detected"
+    ],
+    "timestamp": "2026-09-26 08:03:19"
+  },
+  {
+    "id": "bb114e1e-194f-4de0-8af3-e65721dad493",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-26 05:26:56"
+  },
+  {
+    "id": "cfb2edc6-3109-4b62-a872-ae15ead3a718",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-26 05:26:48"
+  },
+  {
+    "id": "56c9e3f9-6213-4ff9-afca-be64bff1d026",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-25 16:26:51"
+  },
+  {
+    "id": "7a816727-b053-4783-9ced-6472d3681a9a",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-25 13:18:46"
+  },
+  {
+    "id": "e0bda481-1921-4d1e-b760-3ef52b975a16",
+    "text": "Hello! Hope you are having a great day. See you tomorrow.",
+    "score": 15,
+    "risk_level": "LOW RISK",
+    "risk_color": "safe",
+    "reasons": [
+      "\u2713 No major scam indicators detected"
+    ],
+    "timestamp": "2026-09-25 13:18:37"
+  },
+  {
+    "id": "294fb155-d934-4dff-9ef4-5b863c6c54b2",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-25 10:37:54"
+  },
+  {
+    "id": "65021017-52a4-4d60-8783-d9742d213caa",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-25 10:33:50"
+  },
+  {
+    "id": "c4bb6ca4-2162-4ea1-a52d-a06ecc006c45",
+    "text": "URGENT! Your account needs verification. Please verify your account immediately using this link: http://example.com/verify",
+    "score": 52,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-25 10:19:08"
+  },
+  {
+    "id": "efaffdc7-ea7b-4151-813e-3a3a2f55bc22",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-24 17:26:46"
+  },
+  {
+    "id": "c5b66803-1dc2-40cf-b262-23fcc3b635ea",
+    "text": "Hello! Hope you are having a great day. See you tomorrow.",
+    "score": 15,
+    "risk_level": "LOW RISK",
+    "risk_color": "safe",
+    "reasons": [
+      "\u2713 No major scam indicators detected"
+    ],
+    "timestamp": "2026-09-24 17:24:44"
+  },
+  {
+    "id": "357359f5-2bab-4ffc-ba65-b59ed39958d8",
+    "text": "URGENT! Your bank account will be blocked today. Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-21 16:10:47"
+  },
+  {
+    "id": "fcb0ed31-1b17-4d3d-a569-6415e30d7cb0",
+    "text": "hello, please do your account kyc using this link : www.sbiaccounts.com",
+    "score": 29,
+    "risk_level": "LOW RISK",
+    "risk_color": "safe",
+    "reasons": [
+      "\u26a0 Possible organization impersonation detected"
+    ],
+    "timestamp": "2026-09-21 07:35:41"
+  },
+  {
+    "id": "c7f14f05-112d-4807-ac3b-fa37c583617a",
+    "text": "URGENT!  Please verify your account immediately",
+    "score": 38,
+    "risk_level": "LOW RISK",
+    "risk_color": "safe",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected"
+    ],
+    "timestamp": "2026-09-21 07:35:02"
+  },
+  {
+    "id": "99f4c5ea-3ae4-477b-9368-77a6f09bbf68",
+    "text": "URGENT!  Please verify your account immediately using this link: http://example.com/verify",
+    "score": 51,
+    "risk_level": "SUSPICIOUS",
+    "risk_color": "medium",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 External link detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 Suspicious URL keywords: verify"
+    ],
+    "timestamp": "2026-09-21 07:34:49"
+  },
+  {
+    "id": "29d0fb9e-f140-4656-8834-17ef155c227d",
+    "text": "URGENT! Your bank account will be blocke tommarow  Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-21 07:34:37"
+  },
+  {
+    "id": "34eb624a-1e0f-445d-a9b9-12f5f3d80038",
+    "text": "URGENT! Your bank account will be blocke tommarow  Send your OTP and password immediately to verify your KYC. Click here: http://192.168.1.10/verify",
+    "score": 87,
+    "risk_level": "HIGH RISK",
+    "risk_color": "high",
+    "reasons": [
+      "\u26a0 Urgent or pressure-based language detected",
+      "\u26a0 Request for sensitive information detected",
+      "\u26a0 External link detected",
+      "\u26a0 Possible organization impersonation detected",
+      "\u26a0 Link does not use HTTPS",
+      "\u26a0 URL uses an IP address"
+    ],
+    "timestamp": "2026-09-21 07:34:37"
+  }
+]
